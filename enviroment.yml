@@ -1,28 +1,39 @@
 name: proyecto-ia
+
 channels:
-  - pytorch
-  - nvidia
   - conda-forge
+  - pytorch
   - defaults
 
 dependencies:
   - python=3.11
 
+  # Ciencia de datos
   - numpy
   - pandas
-  - matplotlib
-  - opencv
-  - tqdm
 
+  # Visualización
+  - matplotlib
+
+  # Visión computacional
+  - opencv
+
+  # Deep Learning
   - pytorch
   - torchvision
   - torchaudio
-  - pytorch-cuda=12.1
 
-  - jupyter
+  # Notebooks
   - notebook
+  - jupyterlab
   - ipykernel
 
+  # Utilidades
+  - tqdm
+  - pillow
+
+  # Pip
   - pip
+
   - pip:
       - ultralytics
