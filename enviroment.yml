@@ -1,0 +1,28 @@
+name: proyecto-ia
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.11
+
+  - numpy
+  - pandas
+  - matplotlib
+  - opencv
+  - tqdm
+
+  - pytorch
+  - torchvision
+  - torchaudio
+  - pytorch-cuda=12.1
+
+  - jupyter
+  - notebook
+  - ipykernel
+
+  - pip
+  - pip:
+      - ultralytics
